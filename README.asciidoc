@@ -130,6 +130,10 @@ tail -F my.log | h -d org.apache.camel
 echo abcd | h 'b|d'
 ----
 
+.Use `\|` to split keywords
+----
+keywords="hello world\|hello bird"; cat file.txt | grep $keywords | h $keywords
+----
 
 === Screenshots
 
